@@ -39,6 +39,9 @@ body {
   color: var(--dark-grayish-blue);
   letter-spacing: 0.1rem;
   background-color: var(--dark-cyan);
+  background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+  background-position: 104% 218%, -11% -165%;
+  background-repeat: no-repeat, no-repeat;
 }
 
 h1{
@@ -53,6 +56,22 @@ h2{
 
 .pl-3{
     padding-left: 14px;
+}
+
+.mt-0{
+  margin-top: 0;
+}
+
+.mt-1{
+  margin-top: 10px;
+}
+
+.mt-5{
+
+  margin-top: 50px;
+}
+.mb-0{
+  margin-bottom: 0;
 }
 
 .container {
@@ -73,11 +92,13 @@ h2{
 
 .card {
   margin-top: 200px;
-  width: 400px;
+  width: 350px;
   height: auto;
   background-color: var(--white);
   border-radius: 1.0667rem; 
 }
+
+
 
 .card__header {
     width: 100%;
@@ -90,7 +111,11 @@ h2{
 }
 
 .card__body {
-  border-bottom: 1px solid var(--dark-gray);
+  border-bottom: 1px solid #e8e8e8;
+  height: 180px;
+  display: grid;
+  place-content: center;
+
 }
 
 .card__body,
@@ -102,6 +127,9 @@ img{
     border-radius: 50%; 
     border: 5px solid var(--white);
     z-index: 99;
+    position: relative;
+    top: 65%;
+    left:35%;
 }
 
 .card__footer {
@@ -115,8 +143,17 @@ img{
 
 }
 
-.status {
-}
+@media only screen and (min-width: 96rem ) {
 
-@media only screen and (min-width: 25rem) and (max-width: 96rem) {
+  body{
+    background-position: -23% 156%, 123% -154%;
+   
+  }
+  .card {
+    margin-top: 200px;
+    width: 400px;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 1.0667rem; 
+  }
 }
