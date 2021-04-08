@@ -79,7 +79,7 @@ h2{
   margin: auto;
 }
 
-.row{
+.middle{
     display: grid;
     place-content: center;
 }
@@ -146,8 +146,8 @@ img{
 @media only screen and (min-width: 96rem ) {
 
   body{
-    background-position: -23% 156%, 123% -154%;
-   
+    background-position: -4% 142%, 107% -124%; 
+  
   }
   .card {
     margin-top: 200px;
